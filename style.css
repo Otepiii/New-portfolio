@@ -169,7 +169,6 @@ section {
   animation: animate 5s linear infinite;
   background-size: 500%;
   text-align: center;
-  filter: blur(1px);
   font-weight: 100;
 }
 
@@ -191,7 +190,6 @@ hr {
 }
 
 nav {
-  filter: blur(0.3px);
   display: flex;
   justify-content: space-evenly;
   z-index: 4;
