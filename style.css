@@ -43,14 +43,14 @@ nav {
   z-index: 2;
   animation: move-twinkle-back 200s linear infinite;
 }
-section {
+/* section { 
   position: relative;
   height: 100vh;
   width: 100%;
   margin: 0 auto;
   display: flex;
-  /* background: #000; */
-  justify-content: center;
+  background: #000;
+   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
@@ -140,4 +140,135 @@ nav div {
   letter-spacing: 7px;
   cursor: pointer;
   border-radius: 50px;
+} */
+
+section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  background: #000;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.title {
+  z-index: 5;
+  color: transparent;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    to left,
+    #2ecc71,
+    #3498db,
+    #9b59b6,
+    #f39c12
+  );
+  -webkit-background-clip: text;
+  animation: animate 5s linear infinite;
+  background-size: 500%;
+  text-align: center;
+  filter: blur(1px);
+  font-weight: 100;
+}
+
+hr {
+  color: #2ecc71;
+}
+
+.title h1 {
+  font-size: 7em;
+}
+
+.title h2 {
+  z-index: 6;
+  font-size: 2.5rem;
+  color: #ffffff;
+  -webkit-background-clip: text;
+  animation: animate 5s linear infinite;
+  background-size: 400%;
+}
+
+nav {
+  filter: blur(0.3px);
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 4;
+  margin-top: 1rem;
+  font-size: 2rem;
+  background: #050801;
+}
+
+nav div {
+  width: 20%;
+  height: 15%;
+  padding: 1%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 7px;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 15px 25px;
+  margin: 20px;
+  background: transparent;
+  outline: none;
+  border: 2px solid transparent;
+  transition: 300ms;
+}
+
+.title div:nth-child(1) {
+  color: aqua;
+}
+
+nav div:nth-child(2) {
+  color: yellow;
+}
+
+nav div:nth-child(3) {
+  color: fuchsia;
+}
+
+nav div:nth-child(4) {
+  color: greenyellow;
+}
+
+.title div:nth-child(1):hover {
+  color: #050801;
+  border: 2px solid aqua;
+  background: aqua;
+  box-shadow: 0 0 20px aqua;
+}
+
+nav div:nth-child(2):hover {
+  color: #050801;
+  border: 2px solid yellow;
+  background: yellow;
+  box-shadow: 0 0 20px yellow;
+}
+
+nav div:nth-child(3):hover {
+  color: #050801;
+  border: 2px solid fuchsia;
+  background: fuchsia;
+  box-shadow: 0 0 20px fuchsia;
+}
+
+nav div:nth-child(4):hover {
+  color: #050801;
+  border: 2px solid greenyellow;
+  background: greenyellow;
+  box-shadow: 0 0 20px greenyellow;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 100%;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
 }
