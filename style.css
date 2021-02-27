@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 .title h1,
@@ -43,104 +44,6 @@ nav {
   z-index: 2;
   animation: move-twinkle-back 200s linear infinite;
 }
-/* section { 
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  background: #000;
-   justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.title {
-  max-width: 1000px;
-}
-
-.title:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #6b5118;
-  z-index: 4;
-  mix-blend-mode: color;
-  animation: animate 80s linear infinite;
-}
-
-@keyframes animate {
-  0% {
-    filter: hue-rotate(0deg);
-  }
-  100% {
-    filter: hue-rotate(360deg);
-  }
-}
-
-.title h1,
-h2,
-hr,
-nav {
-  z-index: 3;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 7em;
-  filter: blur(0.8px);
-  font-weight: 100;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1),
-    0 0 40px rgba(255, 255, 255, 1), 0 0 80px rgba(255, 255, 255, 1),
-    0 0 160px rgba(255, 255, 255, 1);
-}
-
-h2 {
-  font-size: 3.4em;
-  filter: blur(0.6px);
-  text-transform: initial;
-  font-weight: 100;
-  text-shadow: 0 0 1px rgba(255, 255, 255, 1), 0 0 2px rgba(255, 255, 255, 1),
-    0 0 4px rgba(255, 255, 255, 1), 0 0 8px rgba(255, 255, 255, 1),
-    0 0 16px rgba(255, 255, 255, 1);
-}
-
-hr {
-  position: relative;
-  top: 20px;
-  border: outset;
-  height: 50%;
-  margin-bottom: 50 px;
-  border-radius: 30%;
-}
-
-nav {
-  filter: blur(0.6px);
-  display: flex;
-  justify-content: space-evenly;
-  z-index: 3;
-  margin-top: 1rem;
-  font-size: 2em;
-}
-
-nav div {
-  width: 20%;
-  height: 15%;
-  padding: 1%;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #fff;
-  letter-spacing: 7px;
-  cursor: pointer;
-  border-radius: 50px;
-} */
 
 section {
   position: relative;
@@ -167,9 +70,10 @@ section {
   );
   -webkit-background-clip: text;
   animation: animate 5s linear infinite;
-  background-size: 500%;
+  background-size: 175%;
   text-align: center;
   font-weight: 100;
+  filter: blur(0.65px);
 }
 
 hr {
@@ -193,12 +97,11 @@ nav {
   display: flex;
   justify-content: space-evenly;
   z-index: 4;
-  margin-top: 1rem;
-  font-size: 2rem;
+  font-size: 2.3rem;
   background: #050801;
 }
 
-nav div {
+.nav2 a {
   width: 20%;
   height: 15%;
   padding: 1%;
@@ -215,44 +118,48 @@ nav div {
   transition: 300ms;
 }
 
-.title div:nth-child(1) {
+.nav2 a:nth-child(1) {
   color: aqua;
+  text-decoration: none;
 }
 
-nav div:nth-child(2) {
+nav a:nth-child(2) {
   color: yellow;
+  text-decoration: none;
 }
 
-nav div:nth-child(3) {
+nav a:nth-child(3) {
   color: fuchsia;
+  text-decoration: none;
 }
 
-nav div:nth-child(4) {
+nav a:nth-child(4) {
   color: greenyellow;
+  text-decoration: none;
 }
 
-.title div:nth-child(1):hover {
+.nav2 a:nth-child(1):hover {
   color: #050801;
   border: 2px solid aqua;
   background: aqua;
   box-shadow: 0 0 20px aqua;
 }
 
-nav div:nth-child(2):hover {
+nav a:nth-child(2):hover {
   color: #050801;
   border: 2px solid yellow;
   background: yellow;
   box-shadow: 0 0 20px yellow;
 }
 
-nav div:nth-child(3):hover {
+nav a:nth-child(3):hover {
   color: #050801;
   border: 2px solid fuchsia;
   background: fuchsia;
   box-shadow: 0 0 20px fuchsia;
 }
 
-nav div:nth-child(4):hover {
+nav a:nth-child(4):hover {
   color: #050801;
   border: 2px solid greenyellow;
   background: greenyellow;
@@ -268,5 +175,263 @@ nav div:nth-child(4):hover {
   }
   100% {
     background-position: 0 100%;
+  }
+}
+
+/* header */
+header {
+  top: 0;
+  position: relative;
+  z-index: 100;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header nav {
+  background: #2c2c2c;
+  height: 80px;
+  width: 100%;
+}
+
+label.logo a {
+  z-index: 5;
+  color: transparent;
+  text-transform: uppercase;
+  background-image: linear-gradient(to left, #2ecc71, #3498db, #9b59b6);
+  -webkit-background-clip: text;
+  background-size: 500%;
+  text-align: center;
+  font-weight: 100;
+  filter: blur(0.65px);
+  font-size: 3rem;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+  animation: animate 5s linear infinite;
+  background-size: 175%;
+}
+
+.logo img {
+  height: 80px;
+}
+
+nav ul {
+  float: right;
+  /* margin-right: 20px; */
+}
+
+nav ul li {
+  font-size: 1.8rem;
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+  justify-content: space-between;
+}
+
+header nav ul li a {
+  color: white;
+  text-transform: uppercase;
+}
+
+header nav ul li:nth-child(1) > a:active,
+header nav ul li:nth-child(1) > a:hover {
+  color: aqua;
+  text-shadow: 0 0 5px aqua;
+}
+
+header nav ul li:nth-child(2) > a:active,
+header nav ul li:nth-child(2) > a:hover {
+  color: yellow;
+  text-shadow: 0 0 5px yellow;
+}
+
+header nav ul li:nth-child(3) > a:active,
+header nav ul li:nth-child(3) > a:hover {
+  color: fuchsia;
+  text-shadow: 0 0 5px fuchsia;
+}
+
+header nav ul li:nth-child(4) > a:active,
+header nav ul li:nth-child(4) > a:hover {
+  color: #9fff5f;
+  text-shadow: 0 0 5px #9fff5f;
+}
+
+.checkBtn {
+  font-size: 2.8rem;
+  color: #ffffff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+
+  header nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkBtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    height: 100vh;
+    background: #2c2c2c;
+    top: 80px;
+    right: 0%;
+    left: 100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  header nav ul li a:hover,
+  header nav ul li a :active {
+    background: none;
+    color: #0082e6;
+  }
+
+  #check:checked ~ ul {
+    left: 0%;
+  }
+
+  .about {
+    display: grid;
+  }
+  .about img {
+    display: grid;
+    position: absolute;
+  }
+}
+
+/* photo */
+
+.about {
+  display: block;
+  height: 100%;
+  position: relative;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  background: #000;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+.about img {
+  /* margin-top: rem; */
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: left;
+  left: 10%;
+  z-index: 20;
+  color: #ffffff;
+  opacity: 1;
+  /* margin-right: 140%; */
+  overflow: hidden;
+}
+
+.image-div {
+  display: none;
+}
+
+.about .description {
+  color: #ffffff;
+  z-index: 20;
+  justify-self: left;
+  filter: blur(0.7px);
+  width: 40%;
+  margin-top: 6rem;
+}
+
+.about .description h1 {
+  font-size: 4em;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 1), 0 0 10px rgba(255, 255, 255, 1),
+    0 0 15px rgba(255, 255, 255, 1);
+}
+
+.about .description p {
+  font-size: 2em;
+}
+
+.projects {
+  display: block;
+  height: 100%;
+  position: relative;
+  height: 30vh;
+  margin: 0 auto;
+  display: flex;
+  background: #000;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+.projects h1 {
+  z-index: 7;
+  font-size: 6em;
+  letter-spacing: 15px;
+  color: #000;
+  background-color: #000;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+  line-height: 0.7em;
+  outline: none;
+  color: #ffffff;
+  animation: glow 5s linear infinite;
+  filter: blur(1px);
+}
+
+@keyframes glow {
+  0%,
+  18%,
+  20% {
+    color: #000;
+    box-shadow: none;
+  }
+  0.1%,
+  18.1%,
+  20.1%,
+  50.1%,
+  55%,
+  60.1%,
+  65.1%,
+  80.1%,
+  90.1%,
+  92.1%,
+  100% {
+    color: #ffffff;
+    text-shadow: 0 0 20px #02222c, 0 0 20px #02222c, 0 0 20px #02222c,
+      0 0 20px #02222c;
   }
 }
