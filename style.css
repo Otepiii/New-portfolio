@@ -235,10 +235,14 @@ header nav ul li a {
   text-transform: uppercase;
 }
 
-header nav ul li:nth-child(1) > a:active,
-header nav ul li:nth-child(1) > a:hover {
-  color: aqua;
-  text-shadow: 0 0 5px aqua;
+header nav ul li:nth-child(1) > a {
+  color: #050801;
+  border: 12px solid aqua;
+  background: aqua;
+  box-shadow: 0 0 20px aqua;
+  border-radius: 5px;
+  pointer-events: none;
+  cursor: none;
 }
 
 header nav ul li:nth-child(2) > a:active,
@@ -368,7 +372,7 @@ header nav ul li:nth-child(4) > a:hover {
   justify-self: left;
   filter: blur(0.7px);
   width: 40%;
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 
 .about .description h1 {
