@@ -235,7 +235,7 @@ header nav ul li a {
   text-transform: uppercase;
 }
 
-header nav ul li:nth-child(1) > a {
+header nav ul li.about-nav a {
   color: #050801;
   border: 12px solid aqua;
   background: aqua;
@@ -243,6 +243,21 @@ header nav ul li:nth-child(1) > a {
   border-radius: 5px;
   pointer-events: none;
   cursor: none;
+}
+
+header nav ul li.project-nav a {
+  color: #050801;
+  border: 12px solid yellow;
+  background: yellow;
+  box-shadow: 0 0 20px yellow;
+  border-radius: 5px;
+  pointer-events: none;
+  cursor: none;
+}
+
+header nav ul li:nth-child(1) > a:hover {
+  color: aqua;
+  text-shadow: 0 0 5px aqua;
 }
 
 header nav ul li:nth-child(2) > a:active,
@@ -468,4 +483,107 @@ header nav ul li:nth-child(4) > a:hover {
       -0.035em -0.035em 0 rgba(57, 187, 57, 0.75),
       0.06em 0.07em 0 rgba(38, 38, 194, 0.75);
   }
+}
+
+.projects-container {
+  z-index: 10;
+  color: rgb(255, 255, 255);
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  font-family: "Roboto", sans-serif;
+}
+
+.projects-container .card {
+  position: relative;
+}
+.projects-container .card .face {
+  width: 300px;
+  height: 200px;
+  transition: 0.5s;
+}
+
+.projects-container .card .face.face1 {
+  position: relative;
+  background: #333;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 11;
+  transform: translateY(135px);
+  height: 240px;
+  border-radius: 10px 10px 0 0;
+}
+.projects-container .card:hover .face.face1 {
+  background: linear-gradient(315deg, #003e5a, #610022);
+  opacity: 0.8;
+  transform: translateY(0);
+}
+.projects-container .card .face.face1 .content {
+  opacity: 0.2;
+  transition: 0.5s;
+}
+
+.projects-container .card:hover .face.face1 .content {
+  opacity: 1;
+  max-width: 100px;
+}
+.projects-container .card .face.face1 .content i {
+  font-size: 4em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* max-width: 100px; */
+}
+.projects-container .card .face.face1 .content h3 {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.projects-container .card:hover .face.face1 .content h3 {
+  margin: 0 0 0;
+  padding: 0;
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+}
+.projects-container .card .face.face2 {
+  position: relative;
+  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 30px 60px rgba(41, 41, 41, 0.8);
+  transform: translateY(-100px);
+  border-radius: 0 0 10px 10px;
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(1px);
+}
+.projects-container .card:hover .face.face2 {
+  transform: translateY(0);
+}
+.projects-container .card .face.face2 p {
+  margin: 0;
+  padding: 0;
+}
+.projects-container .card .face.face2 a {
+  margin: 15px 0 0;
+  display: inline-block;
+
+  text-decoration: none;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  padding: 5px;
+  border: 1px solid #333;
+}
+
+.projects-container .card .face.face2 a:hover {
+  background: #333;
+  color: #ffffff;
 }
