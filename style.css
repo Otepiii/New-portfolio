@@ -13,6 +13,7 @@ nav {
   text-align: center;
 }
 
+/* Background */
 @keyframes move-twinkle-back {
   from {
     background-position: 0 0;
@@ -57,6 +58,7 @@ section {
   overflow: hidden;
 }
 
+/* headiing */
 .title {
   z-index: 5;
   color: transparent;
@@ -76,10 +78,6 @@ section {
   filter: blur(0.65px);
 }
 
-hr {
-  color: #2ecc71;
-}
-
 .title h1 {
   font-size: 7em;
 }
@@ -89,10 +87,21 @@ hr {
   font-size: 2.5rem;
   color: #ffffff;
   -webkit-background-clip: text;
-  animation: animate 5s linear infinite;
-  background-size: 400%;
 }
 
+@keyframes animate {
+  0% {
+    background-position: 0 100%;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+
+/* index page nav */
 nav {
   display: flex;
   justify-content: space-evenly;
@@ -166,19 +175,7 @@ nav a:nth-child(4):hover {
   box-shadow: 0 0 20px greenyellow;
 }
 
-@keyframes animate {
-  0% {
-    background-position: 0 100%;
-  }
-  50% {
-    background-position: 100% 0;
-  }
-  100% {
-    background-position: 0 100%;
-  }
-}
-
-/* header */
+/* header nav */
 header {
   top: 0;
   position: relative;
@@ -211,10 +208,6 @@ label.logo a {
   font-weight: bold;
   animation: animate 5s linear infinite;
   background-size: 175%;
-}
-
-.logo img {
-  height: 80px;
 }
 
 nav ul {
@@ -278,6 +271,7 @@ header nav ul li:nth-child(4) > a:hover {
   text-shadow: 0 0 5px #9fff5f;
 }
 
+/* hamburger button */
 .checkBtn {
   font-size: 2.8rem;
   color: #ffffff;
@@ -292,6 +286,7 @@ header nav ul li:nth-child(4) > a:hover {
   display: none;
 }
 
+/* mobile nav bar */
 @media (max-width: 952px) {
   label.logo {
     font-size: 30px;
@@ -348,7 +343,7 @@ header nav ul li:nth-child(4) > a:hover {
   }
 }
 
-/* photo */
+/* about page */
 
 .about {
   display: block;
@@ -363,7 +358,7 @@ header nav ul li:nth-child(4) > a:hover {
   overflow: hidden;
   font-family: "Roboto", sans-serif;
 }
-
+/* about image */
 .about img {
   /* margin-top: rem; */
   height: 100%;
@@ -400,6 +395,7 @@ header nav ul li:nth-child(4) > a:hover {
   font-size: 2em;
 }
 
+/* projects page */
 .projects {
   display: block;
   height: 100%;
@@ -414,24 +410,16 @@ header nav ul li:nth-child(4) > a:hover {
   font-family: "Roboto", sans-serif;
 }
 
-@font-face {
-  font-family: cyberspace;
-  src: url("assets/Cyberspace.otf");
-}
-
+/* project heading */
 .projects h1 {
   z-index: 20;
   position: relative;
-  /* font-family: cyberspace; */
   font-size: 8rem;
   color: rgb(255, 255, 255);
   -webkit-background-clip: text;
   letter-spacing: 1rem;
   font-weight: 800;
   text-transform: uppercase;
-  /* -webkit-text-stroke-width: 0.005rem;
-  -webkit-text-stroke-color: rgb(99, 99, 99); */
-
   text-shadow: 0.06em 0 0 rgba(207, 57, 57, 0.75),
     -0.035em -0.035em 0 rgba(57, 187, 57, 0.75),
     0.06em 0.07em 0 rgba(38, 38, 194, 0.75);
@@ -485,13 +473,15 @@ header nav ul li:nth-child(4) > a:hover {
   }
 }
 
+/* project cards */
 .projects-container {
   z-index: 10;
-  color: rgb(255, 255, 255);
+  color: rgb(201, 201, 201);
   display: flex;
   position: relative;
   justify-content: space-evenly;
   font-family: "Roboto", sans-serif;
+  filter: blur(0.65px);
 }
 
 .projects-container .card {
@@ -534,7 +524,6 @@ header nav ul li:nth-child(4) > a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* max-width: 100px; */
 }
 .projects-container .card .face.face1 .content h3 {
   text-align: center;
@@ -586,4 +575,149 @@ header nav ul li:nth-child(4) > a:hover {
 .projects-container .card .face.face2 a:hover {
   background: #333;
   color: #ffffff;
+}
+
+/* Blog page */
+#blog-title h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  position: relative;
+  font-size: 10rem;
+  color: #f9dec2;
+  font-family: "Roboto", sans-serif;
+  -webkit-background-clip: text;
+  letter-spacing: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-shadow: 2.6px 2.6px 0 #af0022, 5px 5px 0 #000, 10px 10px 0 #4b4b4b;
+  filter: blur(0.5px);
+}
+
+.blog-container {
+  z-index: 10;
+  color: rgb(201, 201, 201);
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  font-family: "Roboto", sans-serif;
+  filter: blur(0.65px);
+}
+
+.blog-post {
+  width: 80%;
+  max-width: 98rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 1rem 3rem rgba(48, 48, 48, 0.8);
+  display: flex;
+  align-items: center;
+  border-radius: 0.8rem;
+}
+
+.blog-post-img {
+  min-width: 25rem;
+  max-width: 25rem;
+  height: 20rem;
+  transform: translateX(-8rem);
+  position: relative;
+}
+
+.blog-post-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0.8rem;
+}
+
+.blog-post-img::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    to right,
+    rgb(255, 159, 0, 0.6),
+    rgb(185, 46, 52, 0.6)
+  );
+  box-shadow: 0.5rem 0.5rem 3rem 1px rgba(146, 146, 146, 0.05);
+  border-radius: 0.8rem;
+}
+
+.blog-post-date {
+  display: block;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+
+.blog-post-title {
+  font-size: 2.5rem;
+  margin: 1.5rem 0 2rem;
+  text-transform: uppercase;
+  color: rgb(185, 46, 52, 0.6);
+}
+
+.blog-post-text {
+  margin-bottom: 3rem;
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.blog-post-cta {
+  margin-top: 21px;
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #ffffff;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 159, 0) 0%,
+    #b92e34 100%
+  );
+  border-radius: 0.8rem;
+  text-decoration: none;
+}
+
+.blog-post-cta:hover {
+  background-image: linear-gradient(
+    to right,
+    #b92e34 0%,
+    rgb(255, 159, 0) 100%
+  );
+}
+
+@media screen and (max-width: 1068px) {
+  .blog-post {
+    max-width: 80rem;
+  }
+  .blog-post-img {
+    min-width: 22rem;
+    max-width: 22rem;
+    height: 18rem;
+  }
+}
+
+@media screen and (max-width: 868px) {
+  .blog-post {
+    max-width: 70rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .blog-post {
+    padding: 2.5 rem;
+    flex-direction: column;
+  }
+  .blog-post-img {
+    min-width: 100%;
+    max-width: 100%;
+    transform: translate(0, -8rem);
+  }
 }
