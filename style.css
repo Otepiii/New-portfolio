@@ -248,6 +248,16 @@ header nav ul li.project-nav a {
   cursor: none;
 }
 
+header nav ul li.blog-nav a {
+  color: #050801;
+  border: 12px solid fuchsia;
+  background: fuchsia;
+  box-shadow: 0 0 20px fuchsia;
+  border-radius: 5px;
+  pointer-events: none;
+  cursor: none;
+}
+
 header nav ul li:nth-child(1) > a:hover {
   color: aqua;
   text-shadow: 0 0 5px aqua;
@@ -596,6 +606,7 @@ header nav ul li:nth-child(4) > a:hover {
 }
 
 .blog-container {
+  margin-top: 5rem;
   z-index: 10;
   color: rgb(201, 201, 201);
   display: flex;
@@ -614,6 +625,8 @@ header nav ul li:nth-child(4) > a:hover {
   display: flex;
   align-items: center;
   border-radius: 0.8rem;
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .blog-post-img {
