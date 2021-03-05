@@ -258,6 +258,16 @@ header nav ul li.blog-nav a {
   cursor: none;
 }
 
+header nav ul li.contact-nav a {
+  color: #050801;
+  border: 12px solid #9fff5f;
+  background: #9fff5f;
+  box-shadow: 0 0 20px #9fff5f;
+  border-radius: 5px;
+  pointer-events: none;
+  cursor: none;
+}
+
 header nav ul li:nth-child(1) > a:hover {
   color: aqua;
   text-shadow: 0 0 5px aqua;
@@ -749,7 +759,7 @@ header nav ul li:nth-child(4) > a:hover {
   align-items: center;
   z-index: 10;
   position: relative;
-  font-size: 8rem;
+  font-size: 5rem;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0;
@@ -806,12 +816,14 @@ header nav ul li:nth-child(4) > a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* text-decoration: none; */
 }
 .social-media-icons ul {
   z-index: 11;
   display: flex;
+  text-decoration: none;
 }
-.social-media-icons ul li {
+.social-media-icons ul a {
   position: relative;
   display: block;
   color: rgb(141, 141, 141);
@@ -829,7 +841,7 @@ header nav ul li:nth-child(4) > a:hover {
   transition: 0.5s;
 }
 
-.social-media-icons ul li:before {
+.social-media-icons ul a:before {
   position: absolute;
   content: "";
   top: 0;
@@ -843,69 +855,122 @@ header nav ul li:nth-child(4) > a:hover {
   transition: 0.5s;
 }
 
-.social-media-icons ul li:nth-child(1):before {
+.social-media-icons ul a:nth-child(1):before {
   background: fuchsia;
+  color: fuchsia;
 }
-.social-media-icons ul li:nth-child(2):before {
+.social-media-icons ul a:nth-child(2):before {
   background: #0e76a8;
+  color: #0e76a8;
 }
-.social-media-icons ul li:nth-child(3):before {
-  background: #00acee;
-  color: #00acee;
-}
-.social-media-icons ul li:nth-child(4):before {
+
+.social-media-icons ul a:nth-child(3):before {
   background: #1a8917;
   color: #1a8917;
 }
-.social-media-icons ul li:nth-child(5):before {
+.social-media-icons ul a:nth-child(4):before {
   background: #fbbc05;
   color: #fbbc05;
 }
 
-.social-media-icons ul li:hover:before {
+.social-media-icons ul a:hover:before {
   transform: scale(1.2);
   filter: blur(3px);
   /* box-shadow: 0 0 15px #d35400; */
 }
 
-.social-media-icons ul li:nth-child(1):hover:before {
+.social-media-icons ul a:nth-child(1):hover:before {
   box-shadow: 0 0 15px fuchsia;
 }
-.social-media-icons ul li:nth-child(2):hover:before {
+.social-media-icons ul a:nth-child(2):hover:before {
   box-shadow: 0 0 15px #0072b1;
 }
-.social-media-icons ul li:nth-child(3):hover:before {
-  box-shadow: 0 0 15px #00acee;
-}
-.social-media-icons ul li:nth-child(4):hover:before {
+.social-media-icons ul a:nth-child(3):hover:before {
   box-shadow: 0 0 15px #1a8917;
 }
-.social-media-icons ul li:nth-child(5):hover:before {
+.social-media-icons ul a:nth-child(4):hover:before {
   box-shadow: 0 0 15px #fbbc05;
 }
 
-.social-media-icons ul li:nth-child(1):hover {
+.social-media-icons ul a:nth-child(1):hover {
   color: fuchsia;
   box-shadow: 0 0 15px fuchsia;
   text-shadow: 0 0 15px fuchsia;
 }
-.social-media-icons ul li:nth-child(2):hover {
+.social-media-icons ul a:nth-child(2):hover {
   color: #0072b1;
   box-shadow: 0 0 15px #0072b1;
   text-shadow: 0 0 15px #0072b1;
 }
-.social-media-icons ul li:nth-child(3):hover {
-  color: #00acee;
-  box-shadow: 0 0 15px #00acee;
-  text-shadow: 0 0 15px #00acee;
-}
-.social-media-icons ul li:nth-child(4):hover {
+.social-media-icons ul a:nth-child(3):hover {
   color: #1a8917;
   box-shadow: 0 0 15px #1a8917;
   text-shadow: 0 0 15px #1a8917;
 }
-.social-media-icons ul li:nth-child(5):hover {
+.social-media-icons ul a:nth-child(4):hover {
   color: #fbbc05;
   box-shadow: 0 0 15px #fbbc05;
   text-shadow: 0 0 15px #fbbc05;
+}
+
+.form {
+  width: 50%;
+  margin-top: 5em;
+  z-index: 10;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+  display: block;
+}
+
+input {
+  color: #fff;
+  height: 3em;
+  width: 100%;
+  margin: 20px 0;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 1px solid #4d4646;
+}
+
+textarea {
+  color: #fff;
+  height: 3em;
+  width: 100%;
+  margin: 20px 0;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 1px solid #4d4646;
+}
+#msg {
+  margin-top: 10em;
+}
+
+::-webkit-input-placeholder {
+  color: #eaeaea;
+  font-size: 2em;
+  letter-spacing: 2px;
+}
+
+.send-button {
+  padding: 20px 32px;
+  font: 2em;
+  background: #0078ff;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  color: #fff;
+  width: 30%;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.send-button:hover {
+  background: #0b4a92;
+  cursor: pointer;
 }
