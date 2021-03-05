@@ -397,8 +397,8 @@ header nav ul li:nth-child(4) > a:hover {
 
 .about .description h1 {
   font-size: 4em;
-  text-shadow: 0 0 5px rgba(255, 255, 255, 1), 0 0 10px rgba(255, 255, 255, 1),
-    0 0 15px rgba(255, 255, 255, 1);
+  text-shadow: 0 0 1px rgba(255, 255, 255, 1), 0 0 10px rgba(255, 255, 255, 1),
+    0 0 7px rgba(255, 255, 255, 1);
 }
 
 .about .description p {
@@ -673,7 +673,8 @@ header nav ul li:nth-child(4) > a:hover {
   font-size: 2.5rem;
   margin: 1.5rem 0 2rem;
   text-transform: uppercase;
-  color: rgb(185, 46, 52, 0.6);
+  color: rgba(241, 71, 80, 0.6);
+  font-weight: 900;
 }
 
 .blog-post-text {
