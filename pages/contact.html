@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,31 +9,31 @@
     <link rel="icon" href="../assets/je.png">
     <link rel="stylesheet" href="../style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" 
-    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="background">
         <div class="stars"></div>
-    <div class="twinkling"></div>
+        <div class="twinkling"></div>
     </div>
 
     <header>
         <nav class="nav">
             <label class="logo"><a href="../index.html">Joseph Evangelista</a></label>
             <input type="checkbox" id="check">
-                <label for="check" class="checkBtn">
+            <label for="check" class="checkBtn">
                     &#9776;
                 </label>
-               </div>
+            </div>
             <ul>
                 <li><a href="./about.html">About</a></li>
                 <li class=""><a href="./projects.html">Projects</a></li>
                 <li class=""><a href="./blog.html">Blog</a></li>
                 <li class="contact-nav"><a href="">Contact</a></li>
             </ul>
-            
+
         </nav>
     </header>
 
@@ -52,17 +53,16 @@
     </div>
 
     <div class="form">
-        <form action="https://formsubmit.co/josepheevangelista@gmail.com" method="POST"> 
-            <input type="email" name="email" placeholder="Email Address" required>
-            <textarea type="text" id="msg" name="text" placeholder="Message" required></textarea>
+        <form action="https://formspree.io/f/xleoqppk" method="POST">
+            <input type="email" name="reply_to" placeholder="Email Address" required>
+            <input type="hidden">
+            <textarea type="text" id="msg" name="message" placeholder="Message" required></textarea>
+            <button type="submit" class="send-button"> Send</button>
         </form>
-        <button type="button" class="send-button"> Send</button>
+        <p id="js-form-response"></p>
+        <div class="thanks">Thanks for the message! Great to hear from you.</div>
     </div>
 
 </body>
+
 </html>
-
-
-
-
-  
