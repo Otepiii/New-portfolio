@@ -53,16 +53,15 @@
     </div>
 
     <div class="form">
-        <form action="https://formspree.io/f/xleoqppk" method="POST">
-            <input type="email" name="reply_to" placeholder="Email Address" required>
-            <input type="hidden">
-            <textarea type="text" id="msg" name="message" placeholder="Message" required></textarea>
+        <form action="https://formspree.io/f/xleoqppk" method="POST" class="my-form">
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="text" id="msg" name="message" placeholder="Message" required></input>
             <button type="submit" class="send-button"> Send</button>
         </form>
-        <p id="js-form-response"></p>
-        <div class="thanks">Thanks for the message! Great to hear from you.</div>
+        <div class="thanks"></div>
     </div>
 
+    <script src="../app.js"></script>
 </body>
 
 </html>

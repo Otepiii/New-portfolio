@@ -962,7 +962,7 @@ textarea::placeholder,
 
 .send-button {
     padding: 20px 32px;
-    font: 2em;
+    font-size: 1em;
     background: #0078ff;
     border: none;
     border-radius: 4px;
@@ -981,6 +981,11 @@ textarea::placeholder,
 }
 
 .thanks {
+    visibility: hidden;
+}
+
+.thanks.success {
+    visibility: visible;
     color: #050801;
     border: 2px solid greenyellow;
     background: greenyellow;
@@ -992,4 +997,36 @@ textarea::placeholder,
     margin-top: 1em;
     padding: .5em;
     font-family: "Roboto", sans-serif;
+    animation: status 3s ease forwards;
+}
+
+.thanks.error {
+    visibility: visible;
+    color: #050801;
+    border: 2px solid rgb(255, 17, 0);
+    background: rgb(255, 17, 0);
+    box-shadow: 0 0 20px rgb(255, 17, 0);
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    border-radius: 8px;
+    margin-top: 1em;
+    padding: .5em;
+    font-family: "Roboto", sans-serif;
+    animation: status 3s ease forwards;
+}
+
+@keyframes status {
+    0% {
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+    85% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
