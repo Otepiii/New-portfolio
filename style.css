@@ -490,7 +490,7 @@ header nav ul li:nth-child(4) > a:hover {
   margin: 0 auto;
   color: #333;
   font-weight: 800;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .project-container {
@@ -503,6 +503,7 @@ header nav ul li:nth-child(4) > a:hover {
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
+  margin-bottom: 4rem;
 }
 
 .card {
@@ -606,14 +607,12 @@ header nav ul li:nth-child(4) > a:hover {
           align-items: center;
   z-index: 20;
   position: relative;
-  font-size: 10rem;
-  color: #f9dec2;
+  font-size: 4rem;
+  color: #333;
   font-family: "Roboto", sans-serif;
   -webkit-background-clip: text;
-  letter-spacing: 1rem;
   font-weight: 800;
   text-transform: uppercase;
-  text-shadow: 2.6px 2.6px 0 #af0022, 5px 5px 0 #000, 10px 10px 0 #4b4b4b;
   -webkit-filter: blur(0.5px);
           filter: blur(0.5px);
 }
@@ -630,14 +629,11 @@ header nav ul li:nth-child(4) > a:hover {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   font-family: "Roboto", sans-serif;
-  -webkit-filter: blur(0.65px);
-          filter: blur(0.65px);
 }
 
 .blog-post {
-  width: 80%;
-  max-width: 98rem;
-  padding: 2rem;
+  max-width: 1000px;
+  padding: .5rem;
   background: rgba(255, 255, 255, 0.15);
   -webkit-box-shadow: 0 1rem 3rem rgba(48, 48, 48, 0.8);
           box-shadow: 0 1rem 3rem rgba(48, 48, 48, 0.8);
@@ -662,11 +658,13 @@ header nav ul li:nth-child(4) > a:hover {
 }
 
 .blog-post-img img {
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: 70%;
   -o-object-fit: cover;
      object-fit: cover;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   border-radius: 0.8rem;
 }
 
@@ -768,7 +766,7 @@ header nav ul li:nth-child(4) > a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 3em;
+  margin-top: 8em;
 }
 
 .contact .swipe-in-text h1 {
@@ -783,8 +781,8 @@ header nav ul li:nth-child(4) > a:hover {
           align-items: center;
   z-index: 10;
   position: relative;
-  font-size: 5rem;
-  color: #ffffff;
+  font-size: 4rem;
+  color: #333;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0;
   font-weight: 900;
@@ -1003,10 +1001,11 @@ header nav ul li:nth-child(4) > a:hover {
 }
 
 .form {
-  width: 50%;
-  margin-top: 5em;
+  width: 40%;
+  max-width: 1300px;
+  margin-top: 10em;
   z-index: 10;
-  position: absolute;
+  position: relative;
   top: 60%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -1023,7 +1022,7 @@ header nav ul li:nth-child(4) > a:hover {
 
 input,
 input::-webkit-input-placeholder {
-  color: #fff;
+  color: #333;
   height: 3em;
   width: 100%;
   margin: 20px 0;
