@@ -779,6 +779,9 @@ hr {
   .about img {
     margin-top: 20rem;
   }
+  .blog-container {
+    height: 204vh;
+  }
   .blog-post {
     max-width: 80rem;
   }
@@ -786,6 +789,9 @@ hr {
     min-width: 22rem;
     max-width: 22rem;
     height: 18rem;
+  }
+  .projects {
+    height: 140vh;
   }
   .project-container {
     margin: 0 auto;
@@ -852,7 +858,8 @@ hr {
   }
   .blog-container {
     margin-top: 30em;
-    margin-bottom: 20em;
+    margin-bottom: 100em;
+    height: 206vh;
   }
   .blog {
     display: -webkit-box;
@@ -870,7 +877,7 @@ hr {
     border-radius: none;
   }
   .contact {
-    margin-top: 10em;
+    margin-top: 30em;
   }
 }
 
@@ -987,7 +994,7 @@ hr {
     margin-bottom: 5rem;
   }
   .blog-container {
-    height: 322vh;
+    height: 340vh;
   }
   .blog-text {
     height: 50vh;

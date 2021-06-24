@@ -652,6 +652,10 @@ html{
     margin-top: 20rem;
 }
 
+.blog-container{
+    height: 204vh;
+}
+
     .blog-post {
         max-width: 80rem;
     }
@@ -659,6 +663,10 @@ html{
         min-width: 22rem;
         max-width: 22rem;
         height: 18rem;
+    }
+
+    .projects{
+        height: 140vh;
     }
 
     .project-container{
@@ -702,7 +710,8 @@ html{
 
     .blog-container{
         margin-top: 30em;
-        margin-bottom: 20em;
+        margin-bottom: 100em;
+        height: 206vh;
     }
 
     .blog{
@@ -718,7 +727,7 @@ width: min-content;
     }
 
     .contact{
-        margin-top: 10em;
+        margin-top: 30em;
     }
     
 }
@@ -813,7 +822,7 @@ width: min-content;
     }
 
     .blog-container{
-        height: 322vh;
+        height: 340vh;
     }
 
     .blog-text {
