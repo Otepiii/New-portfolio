@@ -491,7 +491,7 @@ header nav ul li:nth-child(4)>a:hover {
     // border-radius: 12px;
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     font-size: 4em;
@@ -767,12 +767,16 @@ width: min-content;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         width: 69%;
-        gap: 15px;
+        // gap: 15px;
+        margin: 0 auto;
+    }
+    .card{
         margin: 0 auto;
     }
     .card:nth-of-type(1) > .card-img{
         grid-row: 1 / span 1 ;
         grid-column: 1 / span 1;
+        
     }
     .card:nth-of-type(2) > .card-img{
         grid-row: 2 / span 1 ;
@@ -798,13 +802,18 @@ width: min-content;
     .card-overlay {
         margin-top: -61.56%;
     }
-
+.blog-post{
+    margin: 0 auto;
+        justify-self: center;
+        align-self: center;
+}
     .blog {
         height: 102vh;
+       margin-bottom: 5rem;
     }
 
     .blog-container{
-        height: 100vh;
+        height: 322vh;
     }
 
     .blog-text {
@@ -814,6 +823,16 @@ width: min-content;
 
     .blog-img img{
         border-radius: 0;
+    }
+
+
+    .contact{
+        height: 20%;
+    }
+
+    .contact h1{
+        margin-bottom: 10rem;
+        height: auto;
     }
 
 
