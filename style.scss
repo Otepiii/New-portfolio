@@ -763,7 +763,15 @@ html{
 
     .projects{
         height: 140vh;
+        h1 {
+            font-size: 4em;
+            font-family: roboto;
+            margin: 0 auto;
+            font-weight: 800;
+            margin-bottom: 4rem;
     }
+}
+
 
     .project-container{
         margin: 0 auto;
