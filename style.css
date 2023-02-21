@@ -410,7 +410,7 @@ header nav ul li:nth-child(4) > a:hover {
   display: block;
   height: 100%;
   position: relative;
-  height: 100vh;
+  height: 110vh;
   max-width: 1300px;
   margin: 0 auto;
   display: -webkit-box;
@@ -462,6 +462,7 @@ header nav ul li:nth-child(4) > a:hover {
       justify-self: left;
   width: 60%;
   margin-top: 4rem;
+  margin-bottom: 3rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -479,6 +480,7 @@ header nav ul li:nth-child(4) > a:hover {
 .projects {
   height: 100vh;
   margin: 0 auto;
+  margin-top: 4rem;
   max-width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -668,7 +670,7 @@ header nav ul li:nth-child(4) > a:hover {
 /* Blog page */
 .blog-container {
   height: 140vh;
-  margin-top: 8rem;
+  margin-top: 15rem;
 }
 
 #blog-title h1 {
@@ -700,6 +702,7 @@ header nav ul li:nth-child(4) > a:hover {
   border-radius: 10px;
   width: 900px;
   margin: 0 auto;
+  margin-top: 4rem;
   -webkit-box-shadow: 0 0 8px 1px  #333;
           box-shadow: 0 0 8px 1px  #333;
   overflow: hidden;
@@ -1052,11 +1055,12 @@ hr {
     margin-top: -65.1%;
   }
   .blog-container {
-    margin-top: 30em;
+    margin-top: 38em;
     margin-bottom: 100em;
     height: 116vh;
   }
   .blog {
+    margin-top: 4em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1072,7 +1076,7 @@ hr {
     border-radius: none;
   }
   .contact {
-    margin-top: 40em;
+    margin-top: 4em;
   }
   .contact .form {
     margin-top: 7em;
